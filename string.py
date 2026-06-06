@@ -38,3 +38,18 @@ print(count_words("I love Python"))
 
 
 # 4: Write a function reverse_each_word(sentence) that reverses each word individually while keeping the word order the same.
+def reverse_each_word(sentence):
+    words = sentence.split()
+    reversed_sentence = []
+
+    for word in words:
+        reversed_word = ""
+
+        for ch in range(len(word) - 1, -1, -1):
+            reversed_word += word[ch]
+
+        reversed_sentence.append(reversed_word)
+
+    return " ".join(reversed_sentence)
+
+print(reverse_each_word("I love Python"))
