@@ -11,3 +11,13 @@ print(count_characters("python"))
 
 
 # 2: Write a function count_uppercase(s) that returns the number of uppercase letters in a string.
+def count_uppercase(word):
+    total = 0
+
+    for ch in word:
+        if ch.isupper():
+            total += 1
+
+    return total
+
+print(count_uppercase("PyThOn"))
