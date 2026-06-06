@@ -1,4 +1,4 @@
-# Python Logic Exercises
+# Python Problem Solving
 
 A collection of beginner-friendly **Python practice programs** focused on building strong fundamentals in variables, loops, conditionals, functions, and logical thinking.
 
