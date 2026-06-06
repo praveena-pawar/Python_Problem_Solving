@@ -34,3 +34,7 @@ def count_words(words):
     return total_words
 
 print(count_words("I love Python"))
+
+
+
+# 4: Write a function reverse_each_word(sentence) that reverses each word individually while keeping the word order the same.
