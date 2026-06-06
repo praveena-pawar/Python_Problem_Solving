@@ -7,3 +7,7 @@ def count_characters(word):
 
     return total
 print(count_characters("python"))
+
+
+
+# 2: Write a function count_uppercase(s) that returns the number of uppercase letters in a string.
