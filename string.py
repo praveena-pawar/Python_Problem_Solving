@@ -25,3 +25,12 @@ print(count_uppercase("PyThOn"))
 
 
 # 3: Write a function count_words(sentence) that returns the number of words in a sentence.
+def count_words(words):
+    total_words = 0
+
+    for word in words.split():
+        total_words += 1
+
+    return total_words
+
+print(count_words("I love Python"))
