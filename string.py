@@ -21,3 +21,7 @@ def count_uppercase(word):
     return total
 
 print(count_uppercase("PyThOn"))
+
+
+
+# 3: Write a function count_words(sentence) that returns the number of words in a sentence.
