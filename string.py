@@ -76,3 +76,8 @@ def first_non_repeating(word):
     return None
 
 print(first_non_repeating("aabbcdde"))
+
+
+
+# 6: Write a function remove_duplicates(s) that returns a new string with duplicate characters removed while preserving the original order.
+
