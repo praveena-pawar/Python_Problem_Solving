@@ -94,4 +94,23 @@ print(remove_duplicates("programming"))
 
 
 # 7: Write a function max_frequency_char(s) that returns the character that appears the most times in a string.
+def max_frequency_char(s):
+    freq = {}
 
+    for ch in s:
+        if ch in freq:
+            freq[ch] += 1
+
+        else:
+            freq[ch] = 1
+
+    max_freq = 0
+    max_char = ""
+    for ch in s:
+        if freq[ch] > max_freq:
+            max_freq = freq[ch]
+            max_char = ch
+           
+    return max_char
+
+print(max_frequency_char("banana"))
