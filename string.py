@@ -53,3 +53,8 @@ def reverse_each_word(sentence):
     return " ".join(reversed_sentence)
 
 print(reverse_each_word("I love Python"))
+
+
+
+
+# 5: Write a function first_non_repeating(s) that returns the first character that appears only once in the string.
