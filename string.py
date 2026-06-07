@@ -80,4 +80,13 @@ print(first_non_repeating("aabbcdde"))
 
 
 # 6: Write a function remove_duplicates(s) that returns a new string with duplicate characters removed while preserving the original order.
+def remove_duplicates(word):
+    unique = ""
 
+    for ch in word:
+        if ch not in unique:
+            unique += ch
+
+    return unique
+
+print(remove_duplicates("programming"))
