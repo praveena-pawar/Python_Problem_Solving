@@ -58,3 +58,21 @@ print(reverse_each_word("I love Python"))
 
 
 # 5: Write a function first_non_repeating(s) that returns the first character that appears only once in the string.
+def first_non_repeating(word):
+    freq = {}
+
+    for ch in word:
+        if ch in freq:
+            freq[ch] += 1
+
+        else:
+            freq[ch] = 1
+
+    for ch in word:
+        if freq[ch] == 1:
+            return ch
+
+
+    return None
+
+print(first_non_repeating("aabbcdde"))
