@@ -90,3 +90,8 @@ def remove_duplicates(word):
     return unique
 
 print(remove_duplicates("programming"))
+
+
+
+# 7: Write a function max_frequency_char(s) that returns the character that appears the most times in a string.
+
