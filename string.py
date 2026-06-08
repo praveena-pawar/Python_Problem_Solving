@@ -135,4 +135,14 @@ print(is_rotation("abcd", "acbd"))
 
 
 # 9: Write a function longest_word(sentence) that returns the longest word in a sentence.
+def longest_word(sentence):
+    words = sentence.split()
+    longest = ""
 
+    for word in words:
+        if len(word) > len(longest):
+            longest = word
+
+    return longest
+
+print(longest_word("I love learning Python"))
