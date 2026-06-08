@@ -114,3 +114,8 @@ def max_frequency_char(s):
     return max_char
 
 print(max_frequency_char("banana"))
+
+
+
+# 8: Check if Two Strings Are Rotations
+ 
