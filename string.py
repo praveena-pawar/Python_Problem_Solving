@@ -131,3 +131,8 @@ def is_rotation(s1, s2):
     
 print(is_rotation("abcd", "cdab")) 
 print(is_rotation("abcd", "acbd"))  
+
+
+
+# 9: Write a function longest_word(sentence) that returns the longest word in a sentence.
+
