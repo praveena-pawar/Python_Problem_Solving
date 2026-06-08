@@ -118,4 +118,16 @@ print(max_frequency_char("banana"))
 
 
 # 8: Check if Two Strings Are Rotations
- 
+def is_rotation(s1, s2):
+    if len(s1) != len(s2):
+        return False
+
+    double = s1 + s1
+
+    if s2 in double:
+        return True
+    else:
+        return False
+    
+print(is_rotation("abcd", "cdab")) 
+print(is_rotation("abcd", "acbd"))  
