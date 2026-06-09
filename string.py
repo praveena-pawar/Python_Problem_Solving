@@ -170,3 +170,13 @@ print(compress_string("aaabbcccc"))
 
 
 # 11: Check if a String Contains Only Digits
+def only_digits(s):
+   
+    for ch in s:
+        if not ch.isdigit():
+            return False
+    
+    return True
+        
+print(only_digits("12345"))  
+print(only_digits("12a45"))  
