@@ -180,3 +180,7 @@ def only_digits(s):
         
 print(only_digits("12345"))  
 print(only_digits("12a45"))  
+
+
+
+# 12: Capitalize First Letter of Each Word
