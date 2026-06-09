@@ -146,3 +146,8 @@ def longest_word(sentence):
     return longest
 
 print(longest_word("I love learning Python"))
+
+
+
+# 10: Write a function compress_string(s) that compresses repeated consecutive characters.
+
