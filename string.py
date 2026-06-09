@@ -166,3 +166,7 @@ def compress_string(s):
     return compressed
 
 print(compress_string("aaabbcccc"))
+
+
+
+# 11: Check if a String Contains Only Digits
