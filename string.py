@@ -184,3 +184,14 @@ print(only_digits("12a45"))
 
 
 # 12: Capitalize First Letter of Each Word
+def capitalize_words(sentence):
+    words = sentence.split()
+    result = ""
+
+    for word in words:
+        capitalized = word[0].upper() + word[1:]
+        result += capitalized + " "
+
+    return result.strip()
+
+print(capitalize_words("i love python"))
