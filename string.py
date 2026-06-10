@@ -195,3 +195,7 @@ def capitalize_words(sentence):
     return result.strip()
 
 print(capitalize_words("i love python"))
+
+
+
+# 13: Find the Most Frequent Word
