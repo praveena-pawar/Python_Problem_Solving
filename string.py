@@ -220,3 +220,17 @@ def most_frequent_word(sentence):
     return most_freq
 
 print(most_frequent_word("apple banana apple orange banana apple"))
+
+
+
+# 14: Check if a String Is a Pangram
+def is_pangram(sentence):
+    unique = set()
+
+    for ch in sentence.lower():
+        if ch.isalpha():
+            unique.add(ch)
+
+    return len(unique) == 26
+
+print(is_pangram("The quick brown fox jumps over the lazy dog"))
