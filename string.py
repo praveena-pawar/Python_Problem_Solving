@@ -199,3 +199,24 @@ print(capitalize_words("i love python"))
 
 
 # 13: Find the Most Frequent Word
+def most_frequent_word(sentence):
+    words = sentence.split()
+    freq = {}
+
+    for word in words:
+        if word in freq:
+            freq[word] += 1
+
+        else:
+            freq[word] = 1
+
+    max_freq = 0
+    most_freq = ""
+    for word in words:
+        if freq[word] > max_freq:
+            max_freq = freq[word]
+            most_freq = word
+    
+    return most_freq
+
+print(most_frequent_word("apple banana apple orange banana apple"))
