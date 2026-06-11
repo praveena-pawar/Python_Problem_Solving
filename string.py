@@ -234,3 +234,7 @@ def is_pangram(sentence):
     return len(unique) == 26
 
 print(is_pangram("The quick brown fox jumps over the lazy dog"))
+
+
+
+# 15: Reverse the Order of Words
