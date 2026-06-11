@@ -238,3 +238,14 @@ print(is_pangram("The quick brown fox jumps over the lazy dog"))
 
 
 # 15: Reverse the Order of Words
+def reverse_word_order(sentence):
+    words = sentence.split()
+    reve = ""
+
+    for word in range(len(words) -1, -1, -1):
+        reve +=  words[word] + " "
+
+    return reve.strip()
+    
+
+print(reverse_word_order("I love Python"))
