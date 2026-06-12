@@ -275,3 +275,23 @@ print(duplicate_characters("programming"))
 
 
 # 17: Find the Least Frequent Character
+def least_frequent_char(word):
+    freq = {}
+
+    for ch in word:
+        if ch in freq:
+            freq[ch] += 1
+        else:
+            freq[ch] = 1
+
+
+    min_freq = float('inf')
+    most_freq = ""
+    for ch in word:
+        if freq[ch] < min_freq:
+            min_freq = freq[ch]
+            most_freq = ch
+
+    return most_freq
+
+print(least_frequent_char("banana"))
