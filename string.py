@@ -253,3 +253,21 @@ print(reverse_word_order("I love Python"))
 
 
 # 16: Find All Duplicate Characters
+def duplicate_characters(s):
+    freq = {}
+    duplicate = []
+
+    for ch in s:
+        if ch in freq:
+            freq[ch] += 1
+
+        else:
+            freq[ch] = 1
+
+
+        if freq[ch] > 1 and ch not in duplicate:
+            duplicate.append(ch)
+
+    return duplicate
+
+print(duplicate_characters("programming"))
