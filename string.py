@@ -271,3 +271,7 @@ def duplicate_characters(s):
     return duplicate
 
 print(duplicate_characters("programming"))
+
+
+
+# 17: Find the Least Frequent Character
