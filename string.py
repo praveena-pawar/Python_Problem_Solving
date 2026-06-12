@@ -249,3 +249,7 @@ def reverse_word_order(sentence):
     
 
 print(reverse_word_order("I love Python"))
+
+
+
+# 16: Find All Duplicate Characters
