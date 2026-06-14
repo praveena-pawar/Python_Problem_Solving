@@ -295,3 +295,7 @@ def least_frequent_char(word):
     return most_freq
 
 print(least_frequent_char("banana"))
+
+
+
+# 18: Check if Two Strings Are Isomorphic
