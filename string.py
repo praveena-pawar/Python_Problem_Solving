@@ -299,3 +299,36 @@ print(least_frequent_char("banana"))
 
 
 # 18: Check if Two Strings Are Isomorphic
+def is_isomorphic(s, t):
+
+    if len(s) != len(t):
+        return False
+
+    map1 = {}
+    map2 = {}
+
+    for i in range(len(s)):
+
+        ch1 = s[i]
+        ch2 = t[i]
+
+        if ch1 in map1:
+            if map1[ch1] != ch2:
+                return False
+        else:
+            map1[ch1] = ch2
+
+        if ch2 in map2:
+            if map2[ch2] != ch1:
+                return False
+        else:
+            map2[ch2] = ch1
+
+    return True
+
+
+print(is_isomorphic("egg", "add"))      
+print(is_isomorphic("foo", "bar"))      
+
+
+
