@@ -326,7 +326,6 @@ def is_isomorphic(s, t):
 
     return True
 
-
 print(is_isomorphic("egg", "add"))      
 print(is_isomorphic("foo", "bar"))      
 
