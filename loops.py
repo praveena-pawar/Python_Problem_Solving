@@ -86,6 +86,7 @@ print(x, y)
 
 
 
+
 # Q6 — Predict the Output (Loop + Conditions + Updates)
 x = 7
 for i in range(1, 6):
