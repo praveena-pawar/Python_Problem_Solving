@@ -342,3 +342,7 @@ def common_characters(s1, s2):
     return list(result)
 
 print(common_characters("apple", "plane"))
+
+
+
+# 20: Check if a String Is a Subsequence
