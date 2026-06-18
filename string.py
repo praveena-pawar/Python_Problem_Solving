@@ -332,3 +332,13 @@ print(is_isomorphic("foo", "bar"))
 
 
 # 19: Find the Common Characters Between Two Strings
+def common_characters(s1, s2):
+    result = ""
+
+    for ch in s1:
+        if ch in s2 and ch not in result:
+            result += ch
+    
+    return list(result)
+
+print(common_characters("apple", "plane"))
