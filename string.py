@@ -346,3 +346,17 @@ print(common_characters("apple", "plane"))
 
 
 # 20: Check if a String Is a Subsequence
+def is_subsequence(s1, s2):
+    i = 0
+    j  = 0
+
+    while j < len(s2) and i < len(s1):
+        if s1[i] == s2[j]:
+            i += 1
+
+        j += 1
+
+    return i == len(s1)
+
+print(is_subsequence("ace", "abcde"))
+print(is_subsequence("aec", "abcde"))
