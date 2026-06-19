@@ -42,3 +42,12 @@ print(count_even([1, 2, 3, 4, 5, 6]))
 
 
 # 4: Create a List of Squares
+def squares_list(nums):
+    squares = []
+
+    for i in nums:
+        squares.append(i * i)
+
+    return squares
+
+print(squares_list([1, 2, 3, 4]))
