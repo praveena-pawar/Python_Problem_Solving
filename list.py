@@ -82,3 +82,13 @@ print(find_index([10, 20, 30, 40], 50))
 
 
 # 7: Count Occurrences of a Target
+def count_occurrences(nums, target):
+    occurrences_count = 0
+
+    for i in nums:
+        if i == target:
+            occurrences_count += 1
+
+    return occurrences_count
+
+print(count_occurrences([1, 2, 2, 3, 2, 4], 2))
