@@ -28,3 +28,17 @@ print(find_smallest([8, 3, 12, 1, 5]))
 
 
 # 3: Count Even Numbers
+def count_even(nums):
+    even_count = 0
+
+    for i in nums:
+        if i % 2 == 0:
+            even_count += 1
+
+    return even_count
+
+print(count_even([1, 2, 3, 4, 5, 6]))
+
+
+
+# 4: Create a List of Squares
