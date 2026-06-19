@@ -65,3 +65,7 @@ def reverse_list(nums):
 
 
 print(reverse_list([1, 2, 3, 4]))
+
+
+
+# 6: Find the Index of an Element
