@@ -78,3 +78,7 @@ def find_index(nums, target):
 
 print(find_index([10, 20, 30, 40], 30))
 print(find_index([10, 20, 30, 40], 50))
+
+
+
+# 7: Count Occurrences of a Target
