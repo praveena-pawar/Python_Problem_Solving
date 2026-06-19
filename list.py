@@ -69,3 +69,12 @@ print(reverse_list([1, 2, 3, 4]))
 
 
 # 6: Find the Index of an Element
+def find_index(nums, target):
+    for i in range(len(nums)):
+        if nums[i] == target:
+            return i
+        
+    return -1
+
+print(find_index([10, 20, 30, 40], 30))
+print(find_index([10, 20, 30, 40], 50))
