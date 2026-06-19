@@ -55,3 +55,13 @@ print(squares_list([1, 2, 3, 4]))
 
 
 # 5: Reverse a List (Without reverse())
+def reverse_list(nums):
+    reversed_list = []
+
+    for i in range(len(nums)-1, -1, -1):
+        reversed_list.append(nums[i])
+
+    return reversed_list
+
+
+print(reverse_list([1, 2, 3, 4]))
