@@ -92,3 +92,7 @@ def count_occurrences(nums, target):
     return occurrences_count
 
 print(count_occurrences([1, 2, 2, 3, 2, 4], 2))
+
+
+
+# 8: Remove All Occurrences of a Target
