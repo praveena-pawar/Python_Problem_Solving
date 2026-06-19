@@ -9,3 +9,7 @@ def list_sum(nums):
 
 
 print(list_sum([10, 20, 30, 40]))
+
+
+
+# 2: Find the Smallest Element
