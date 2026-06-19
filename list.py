@@ -51,3 +51,7 @@ def squares_list(nums):
     return squares
 
 print(squares_list([1, 2, 3, 4]))
+
+
+
+# 5: Reverse a List (Without reverse())
