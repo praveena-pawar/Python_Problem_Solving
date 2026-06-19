@@ -110,3 +110,18 @@ print(remove_target([1, 2, 2, 3, 2, 4], 2))
 
 
 # 9: Find the Second Smallest Element
+def second_smallest(nums):
+    smallest = nums[0]
+
+    for i in nums:
+        if i < smallest:
+            smallest = i
+
+    second_small = float('inf')
+    for i in nums:
+        if i > smallest and i < second_small:
+            second_small = i
+
+    return second_small
+
+print(second_smallest([8, 3, 12, 1, 5]))
