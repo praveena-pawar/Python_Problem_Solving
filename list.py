@@ -96,3 +96,13 @@ print(count_occurrences([1, 2, 2, 3, 2, 4], 2))
 
 
 # 8: Remove All Occurrences of a Target
+def remove_target(nums, target):
+    target_removed = []
+
+    for i in nums:
+        if i != target:
+            target_removed.append(i)
+
+    return target_removed
+
+print(remove_target([1, 2, 2, 3, 2, 4], 2))
