@@ -24,3 +24,7 @@ def find_smallest(nums):
 
 
 print(find_smallest([8, 3, 12, 1, 5]))
+
+
+
+# 3: Count Even Numbers
