@@ -106,3 +106,7 @@ def remove_target(nums, target):
     return target_removed
 
 print(remove_target([1, 2, 2, 3, 2, 4], 2))
+
+
+
+# 9: Find the Second Smallest Element
