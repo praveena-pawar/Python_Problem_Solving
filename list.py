@@ -208,3 +208,7 @@ def move_zeros(nums):
     return non_zeros
 
 print(move_zeros([0, 1, 0, 3, 12]))
+
+
+
+# 15: Rotate List Right by One Position
