@@ -192,3 +192,19 @@ print(remove_duplicates([1, 2, 2, 3, 1, 4, 3]))
 
 
 # 14: Move All Zeros to the End
+def move_zeros(nums):
+    non_zeros = []
+    zero_count = 0
+
+    for i in nums:
+        if i == 0:
+            zero_count += 1
+        else:
+            non_zeros.append(i)
+    
+    for _ in range(zero_count):
+        non_zeros.append(0)  
+    
+    return non_zeros
+
+print(move_zeros([0, 1, 0, 3, 12]))
