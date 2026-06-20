@@ -146,3 +146,15 @@ print(merge_lists([1, 2, 3], [4, 5, 6]))
 
 
 # 11: Find the Largest Odd Number
+def largest_odd(nums):
+    large_odd = None
+
+    for i in nums:
+        if i % 2 != 0:
+            if large_odd is None or i > large_odd:
+                large_odd = i
+
+    return large_odd
+
+print(largest_odd([8, 3, 12, 7, 5]))
+print(largest_odd([2, 4, 6, 8]))
