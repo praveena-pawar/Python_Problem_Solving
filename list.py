@@ -212,3 +212,12 @@ print(move_zeros([0, 1, 0, 3, 12]))
 
 
 # 15: Rotate List Right by One Position
+def rotate_right(nums):
+    rotated_right = [nums[-1]]
+
+    for i in range(len(nums)-1):
+        rotated_right.append(nums[i])
+
+    return rotated_right
+
+print(rotate_right([1, 2, 3, 4, 5]))
