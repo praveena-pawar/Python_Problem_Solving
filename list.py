@@ -162,3 +162,14 @@ print(largest_odd([2, 4, 6, 8]))
 
 
 # 12: Find Common Elements
+def common_elements(a, b):
+    common_number = []
+
+    for i in a:
+        if i in b and i not in common_number:
+            common_number.append(i)
+
+    return common_number
+
+print(common_elements([1, 2, 3, 4], [3, 4, 5, 6]))
+print(common_elements([1, 2, 2, 3], [2, 3, 3, 4]))
