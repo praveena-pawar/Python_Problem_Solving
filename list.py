@@ -158,3 +158,7 @@ def largest_odd(nums):
 
 print(largest_odd([8, 3, 12, 7, 5]))
 print(largest_odd([2, 4, 6, 8]))
+
+
+
+# 12: Find Common Elements
