@@ -177,3 +177,14 @@ print(common_elements([1, 2, 2, 3], [2, 3, 3, 4]))
 
 
 # 13: Remove Duplicates from a List
+def remove_duplicates(nums):
+    unique = []
+
+    for i in nums:
+        if i not in unique:
+            unique.append(i)
+    
+    return unique
+
+
+print(remove_duplicates([1, 2, 2, 3, 1, 4, 3]))
