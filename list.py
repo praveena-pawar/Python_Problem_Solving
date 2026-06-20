@@ -173,3 +173,7 @@ def common_elements(a, b):
 
 print(common_elements([1, 2, 3, 4], [3, 4, 5, 6]))
 print(common_elements([1, 2, 2, 3], [2, 3, 3, 4]))
+
+
+
+# 13: Remove Duplicates from a List
