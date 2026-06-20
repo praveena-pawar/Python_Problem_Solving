@@ -128,7 +128,7 @@ print(second_smallest([8, 3, 12, 1, 5]))
 
 
 
-# 9: Merge Two Lists
+# 10: Merge Two Lists
 def merge_lists(a, b):
     result = []
 
