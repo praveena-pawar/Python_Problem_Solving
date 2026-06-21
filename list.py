@@ -232,3 +232,7 @@ def is_sorted(nums):
     return True
 
 print(is_sorted([1, 2, 3, 4, 5]))
+
+
+
+# 17: Find Missing Number
