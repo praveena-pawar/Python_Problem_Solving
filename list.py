@@ -244,3 +244,7 @@ def find_missing(nums, n):
     return None
 
 print(find_missing([1, 2, 4, 5], 5))
+
+
+
+# 18: Find the Difference Between Largest and Smallest
