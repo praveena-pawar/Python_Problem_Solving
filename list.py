@@ -220,3 +220,7 @@ def rotate_right(nums):
     return rotated_right
 
 print(rotate_right([1, 2, 3, 4, 5]))
+
+
+
+# 16: Check if a List Is Sorted
