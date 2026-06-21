@@ -240,5 +240,7 @@ def find_missing(nums, n):
     for i in range(1, n+1):
         if i not in nums:
             return i
+        
+    return None
 
 print(find_missing([1, 2, 4, 5], 5))
