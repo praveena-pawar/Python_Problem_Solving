@@ -248,3 +248,19 @@ print(find_missing([1, 2, 4, 5], 5))
 
 
 # 18: Find the Difference Between Largest and Smallest
+def range_of_list(nums):
+    largest_num = nums[0]
+
+    for i in nums:
+        if i > largest_num:
+            largest_num = i
+
+    smallest_num = float('inf')
+
+    for i in nums:
+        if i < smallest_num:
+            smallest_num = i
+
+    return largest_num - smallest_num
+
+print(range_of_list([8, 3, 12, 1, 5]))
