@@ -279,3 +279,7 @@ def lists_equal(a, b):
     return True
 
 print(lists_equal([1, 2, 3], [1, 2, 3]))
+
+
+
+# 20: Find the First Duplicate Element
