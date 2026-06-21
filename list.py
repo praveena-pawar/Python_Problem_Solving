@@ -264,3 +264,7 @@ def range_of_list(nums):
     return largest_num - smallest_num
 
 print(range_of_list([8, 3, 12, 1, 5]))
+
+
+
+# 19: Check if Two Lists Are Equal
