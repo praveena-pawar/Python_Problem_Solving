@@ -283,3 +283,15 @@ print(lists_equal([1, 2, 3], [1, 2, 3]))
 
 
 # 20: Find the First Duplicate Element
+def first_duplicate(nums):
+    seen = []
+
+    for i in nums:
+        if i in seen:
+            return i
+        else:
+            seen.append(i)
+        
+    return None
+
+print(first_duplicate([1, 2, 3, 2, 4, 5]))
