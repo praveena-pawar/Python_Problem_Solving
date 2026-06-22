@@ -334,3 +334,15 @@ print(find_pairs([1, 2, 3, 4, 5], 5))
 
 
 # 23: Find the Intersection Count
+def intersection_count(a, b):
+    unique_element = 0
+    seen = []
+
+    for i in a:
+        if i in b and i not in seen:
+            unique_element += 1
+            seen.append(i)
+
+    return unique_element
+
+print(intersection_count([1, 2, 2, 3, 4], [2, 3, 3, 5]))
