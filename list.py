@@ -350,3 +350,23 @@ print(intersection_count([1, 2, 2, 3, 4], [2, 3, 3, 5]))
 
 
 # 24: Find the Longest Consecutive Run of the Same Number
+def longest_consecutive_run(nums):
+    if len(nums) == 0:
+        return 0
+
+    current_run = 1
+    longest_run = 1
+
+    for i in range(1, len(nums)):
+        if nums[i] == nums[i - 1]:
+            current_run += 1
+        else:
+            current_run = 1
+
+        if current_run > longest_run:
+            longest_run = current_run
+
+    return longest_run
+
+
+print(longest_consecutive_run([1, 1, 2, 2, 2, 3, 3, 1]))
