@@ -346,3 +346,7 @@ def intersection_count(a, b):
     return unique_element
 
 print(intersection_count([1, 2, 2, 3, 4], [2, 3, 3, 5]))
+
+
+
+# 24: Find the Longest Consecutive Run of the Same Number
