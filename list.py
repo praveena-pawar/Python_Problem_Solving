@@ -368,5 +368,8 @@ def longest_consecutive_run(nums):
 
     return longest_run
 
-
 print(longest_consecutive_run([1, 1, 2, 2, 2, 3, 3, 1]))
+
+
+
+# 25: Rotate List Left by One Position
