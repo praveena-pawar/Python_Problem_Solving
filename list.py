@@ -316,3 +316,7 @@ def single_number(nums):
     return None
 
 print(single_number([2, 1, 4, 2, 1]))
+
+
+
+# 22: Find All Pairs with a Given Sum
