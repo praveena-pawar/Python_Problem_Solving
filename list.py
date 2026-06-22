@@ -373,3 +373,16 @@ print(longest_consecutive_run([1, 1, 2, 2, 2, 3, 3, 1]))
 
 
 # 25: Rotate List Left by One Position
+def rotate_left(nums):
+    rotated_left = []
+    first_elment = nums[0]
+
+
+    for i in range(1, len(nums)):
+        rotated_left.append(nums[i])
+    
+    rotated_left.append(first_elment)
+
+    return rotated_left
+
+print(rotate_left([1, 2, 3, 4, 5]))   
