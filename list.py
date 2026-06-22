@@ -320,3 +320,13 @@ print(single_number([2, 1, 4, 2, 1]))
 
 
 # 22: Find All Pairs with a Given Sum
+def find_pairs(nums, target):
+    pairs = []
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i] + nums[j] == target:
+                pairs.append((nums[i], nums[j]))
+
+    return pairs
+ 
+print(find_pairs([1, 2, 3, 4, 5], 5))
