@@ -299,3 +299,20 @@ print(first_duplicate([1, 2, 3, 2, 4, 5]))
 
 
 # 21: Find the Element That Appears Only Once
+def single_number(nums):
+    freq = {}
+
+    for i in nums:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+
+
+    for i in nums:
+        if freq[i] == 1:
+            return i
+
+    return None
+
+print(single_number([2, 1, 4, 2, 1]))
