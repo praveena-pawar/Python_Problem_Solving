@@ -330,3 +330,7 @@ def find_pairs(nums, target):
     return pairs
  
 print(find_pairs([1, 2, 3, 4, 5], 5))
+
+
+
+# 23: Find the Intersection Count
