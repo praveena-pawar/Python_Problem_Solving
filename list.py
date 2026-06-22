@@ -295,3 +295,7 @@ def first_duplicate(nums):
     return None
 
 print(first_duplicate([1, 2, 3, 2, 4, 5]))
+
+
+
+# 21: Find the Element That Appears Only Once
