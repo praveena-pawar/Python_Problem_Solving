@@ -448,7 +448,19 @@ print(first_last_position([1, 2, 3, 2, 4, 2], 2))
 
 
 # 29: Split a List into Even and Odd Numbers
+def split_even_odd(nums):
+    even_list = []
+    odd_list = []
 
+    for i in nums:
+        if i % 2 == 0:
+            even_list.append(i)
+        else:
+            odd_list.append(i)
+
+    return even_list, odd_list
+
+print(split_even_odd([1, 2, 3, 4, 5, 6]))
 
 
 
