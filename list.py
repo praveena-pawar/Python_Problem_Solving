@@ -408,6 +408,9 @@ print(is_palindrome_list([1, 2, 3, 4]))
 
 
 
+# 27: Find the Majority Element
+
+
 
 
 
