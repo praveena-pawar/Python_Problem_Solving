@@ -390,3 +390,20 @@ print(rotate_left([1, 2, 3, 4, 5]))
 
 
 # 26: Check if a List Is a Palindrome
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
