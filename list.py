@@ -463,6 +463,7 @@ def split_even_odd(nums):
 print(split_even_odd([1, 2, 3, 4, 5, 6]))
 
 
+
 # 30: Find the Longest Increasing Streak
 def longest_increasing_streak(nums):
     if len(nums) == 0:
