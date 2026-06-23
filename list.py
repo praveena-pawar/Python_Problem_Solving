@@ -385,4 +385,8 @@ def rotate_left(nums):
 
     return rotated_left
 
-print(rotate_left([1, 2, 3, 4, 5]))   
+print(rotate_left([1, 2, 3, 4, 5])) 
+
+
+
+# 26: Check if a List Is a Palindrome
