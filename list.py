@@ -409,8 +409,23 @@ print(is_palindrome_list([1, 2, 3, 4]))
 
 
 # 27: Find the Majority Element
+def majority_element(nums):
+    freq = {}
+
+    for i in nums:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
 
 
+    for i in nums:
+        if freq[i] > len(nums) / 2:
+            return i
+           
+    return None
+
+print(majority_element([2, 2, 1, 2, 3, 2, 2]))
 
 
 
