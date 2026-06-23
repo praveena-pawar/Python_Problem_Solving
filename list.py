@@ -390,6 +390,21 @@ print(rotate_left([1, 2, 3, 4, 5]))
 
 
 # 26: Check if a List Is a Palindrome
+def is_palindrome_list(nums):
+    left = 0
+    right = len(nums) - 1
+
+    while left < right:
+        if nums[left] != nums[right]:
+            return False
+        else:
+            left += 1
+            right -= 1
+        
+    return True
+  
+print(is_palindrome_list([1, 2, 3, 2, 1]))
+print(is_palindrome_list([1, 2, 3, 4]))
 
 
 
