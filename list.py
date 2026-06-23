@@ -438,13 +438,16 @@ def first_last_position(nums, target):
         if nums[i] == target:
             if first == -1:
                 first = i
-                
+
             last = i
             
     return ((first, last))
 
 print(first_last_position([1, 2, 3, 2, 4, 2], 2))
 
+
+
+# 29: Split a List into Even and Odd Numbers
 
 
 
