@@ -34,3 +34,9 @@ def most_frequent(nums):
     return most_frequent_element
 
 print(most_frequent([1, 2, 2, 3, 1, 2]))
+
+
+
+# 3: Find All Duplicate Elements
+
+
