@@ -79,3 +79,7 @@ def least_frequent(nums):
 
 
 print(least_frequent([1, 2, 2, 3, 1, 2]))
+
+
+
+# 5: Invert a Dictionary
