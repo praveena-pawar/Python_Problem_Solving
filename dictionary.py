@@ -11,3 +11,7 @@ def count_frequency(nums):
     return freq
 
 print(count_frequency([1, 2, 2, 3, 1, 2]))
+
+
+
+# 2: Find the Most Frequent Element
