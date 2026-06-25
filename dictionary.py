@@ -83,3 +83,12 @@ print(least_frequent([1, 2, 2, 3, 1, 2]))
 
 
 # 5: Invert a Dictionary
+def invert_dict(d):
+    result = {}
+
+    for key in d:
+        result[d[key]] = key
+
+    return result
+
+print(invert_dict({"a": 1, "b": 2, "c": 3}))
