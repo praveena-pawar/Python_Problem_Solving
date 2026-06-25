@@ -59,4 +59,23 @@ print(find_duplicates([1, 2, 2, 3, 1, 4, 5, 5]))
 
 
 # 4: Find the Least Frequent Element
+def least_frequent(nums):
+    freq = {}
 
+    for i in nums:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+
+    lowest_freq = float('inf')
+    least_frequent_element = None
+    for key in freq:
+        if freq[key] < lowest_freq:
+            lowest_freq = freq[key]
+            least_frequent_element = key
+
+    return least_frequent_element
+
+
+print(least_frequent([1, 2, 2, 3, 1, 2]))
