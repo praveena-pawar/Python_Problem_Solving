@@ -96,3 +96,18 @@ print(invert_dict({"a": 1, "b": 2, "c": 3}))
 
 
 # 6: Merge Two Dictionaries
+def merge_dicts(d1, d2):
+    result = {}
+
+    for key in d1:
+        result[key] = d1[key]
+
+    for key in d2:
+        result[key] = d2[key]
+
+    return result
+
+print(merge_dicts(
+    {"a": 1, "b": 2},
+    {"b": 20, "c": 3}
+))
