@@ -92,3 +92,7 @@ def invert_dict(d):
     return result
 
 print(invert_dict({"a": 1, "b": 2, "c": 3}))
+
+
+
+# 6: Merge Two Dictionaries
