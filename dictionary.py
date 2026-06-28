@@ -116,3 +116,19 @@ print(merge_dicts({"a": 1, "b": 2}, {"c": 3, "d": 4}))
 
 
 # 7: Count Unique Values
+def unique_value_count(d):
+    unique = []
+
+    for value in d.values():
+        if value not in unique:
+            unique.append(value)
+
+    return len(unique)
+
+
+print(unique_value_count({
+    "a": 1,
+    "b": 2,
+    "c": 1,
+    "d": 3
+}))
