@@ -136,3 +136,22 @@ print(unique_value_count({
 
 
 # 8: Group Keys by Value
+def group_keys_by_value(d):
+    result = {}
+
+    for key, value in d.items():
+        if value in result:
+            result[value].append(key)
+        
+        else:
+            result[value] = [key]
+
+    return result
+        
+print(group_keys_by_value({
+    "a": 1,
+    "b": 2,
+    "c": 1,
+    "d": 3,
+    "e": 2
+}))
