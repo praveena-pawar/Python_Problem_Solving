@@ -172,3 +172,23 @@ def char_frequency(text):
 
 print(char_frequency("banana"))
 
+
+
+# 10: Find the First Non-Repeating Character
+def first_non_repeating(text):
+    freq = {}
+    
+    for ch in text:
+        if ch in freq:
+            freq[ch] += 1
+        else:
+            freq[ch] = 1
+
+    for ch in text:
+        if freq[ch] == 1:
+            return ch
+
+    return None
+
+
+print(first_non_repeating("aabbcdde"))
