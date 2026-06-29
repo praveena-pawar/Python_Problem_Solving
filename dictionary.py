@@ -159,5 +159,16 @@ print(group_keys_by_value({
 
 
 # 9: Count Characters in a String
+def char_frequency(text):
+    freq = {}
+    
+    for ch in text:
+        if ch in freq:
+            freq[ch] += 1
+        else:
+            freq[ch] = 1
 
+    return freq
+
+print(char_frequency("banana"))
 
