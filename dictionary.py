@@ -155,3 +155,9 @@ print(group_keys_by_value({
     "d": 3,
     "e": 2
 }))
+
+
+
+# 9: Count Characters in a String
+
+
