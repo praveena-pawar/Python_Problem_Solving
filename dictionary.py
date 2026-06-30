@@ -195,3 +195,24 @@ print(first_non_repeating("aabbcdde"))
 
 
 # 11: Merge Frequencies of Two Lists
+def merge_frequencies(list1, list2):
+    freq = {}
+
+    for i in list1:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+
+    for i in list2:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+
+    return freq
+
+print(merge_frequencies(
+    [1, 2, 2],
+    [2, 3, 1]
+))
