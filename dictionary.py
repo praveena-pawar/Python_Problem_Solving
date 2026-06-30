@@ -220,3 +220,29 @@ print(merge_frequencies(
 
 
 # 12: Are Two Strings Anagrams
+def are_anagrams(s1, s2):
+    if len(s1) != len(s2):
+        return False
+    
+    freq = {}
+    for ch in s1:
+        if ch in freq:
+            freq[ch] += 1
+        else:
+            freq[ch] = 1
+
+    freque = {}
+
+    for ch in s2:
+        if ch in freque:
+            freque[ch] += 1
+        else:
+            freque[ch] = 1
+
+    if freq == freque:
+        return True
+
+    return False
+
+print(are_anagrams("hello", "world"))
+print(are_anagrams("listen", "silent"))
