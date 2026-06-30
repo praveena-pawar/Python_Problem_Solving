@@ -190,5 +190,8 @@ def first_non_repeating(text):
 
     return None
 
-
 print(first_non_repeating("aabbcdde"))
+
+
+
+# 11: Merge Frequencies of Two Lists
