@@ -246,3 +246,7 @@ def are_anagrams(s1, s2):
 
 print(are_anagrams("hello", "world"))
 print(are_anagrams("listen", "silent"))
+
+
+
+# 13: Find Common Keys
