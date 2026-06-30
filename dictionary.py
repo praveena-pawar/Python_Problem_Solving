@@ -250,3 +250,16 @@ print(are_anagrams("listen", "silent"))
 
 
 # 13: Find Common Keys
+def common_keys(d1, d2):
+    result = []
+
+    for i in d1:
+        if i in d2:
+            result.append(i)
+
+    return result
+
+print(common_keys(
+    {"a": 1, "b": 2, "c": 3},
+    {"b": 20, "c": 30, "d": 40}
+))
