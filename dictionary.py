@@ -267,3 +267,18 @@ print(common_keys(
 
 
 # 14: Count Keys with Even Values
+def count_even_values(d):
+    count_even = 0
+
+    for i in d.values():
+        if i % 2 == 0:
+            count_even += 1
+
+    return count_even
+
+print(count_even_values({
+    "a": 1,
+    "b": 2,
+    "c": 4,
+    "d": 5
+}))
