@@ -286,3 +286,19 @@ print(count_even_values({
 
 
 # 15: Find the Key with the Maximum Value
+def key_with_max_value(d):
+    max_value = float('-inf')
+    max_key = None
+
+    for key in d.keys():
+        if d[key] > max_value:
+            max_value = d[key]
+            max_key = key
+
+    return max_key
+
+print(key_with_max_value({
+    "a": 10,
+    "b": 25,
+    "c": 15
+}))
