@@ -216,3 +216,7 @@ print(merge_frequencies(
     [1, 2, 2],
     [2, 3, 1]
 ))
+
+
+
+# 12: Are Two Strings Anagrams
