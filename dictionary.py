@@ -263,3 +263,7 @@ print(common_keys(
     {"a": 1, "b": 2, "c": 3},
     {"b": 20, "c": 30, "d": 40}
 ))
+
+
+
+# 14: Count Keys with Even Values
