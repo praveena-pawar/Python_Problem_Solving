@@ -323,3 +323,16 @@ print(remove_value(
 
 
 # 17: Find Keys with a Given Value
+def find_keys_by_value(d, target):
+    result = []
+
+    for key, value in d.items():
+        if value == target:
+            result.append(key)
+
+    return result
+
+print(find_keys_by_value(
+    {"a": 1, "b": 2, "c": 1, "d": 3},
+    1
+))
