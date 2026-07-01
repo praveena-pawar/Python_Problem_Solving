@@ -358,3 +358,7 @@ print(invert_with_duplicates({
     "d": 2,
     "e": 3
 }))
+
+
+
+# 19: Sum of All Dictionary Values
