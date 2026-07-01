@@ -302,3 +302,7 @@ print(key_with_max_value({
     "b": 25,
     "c": 15
 }))
+
+
+
+# 16: Remove Keys with a Given Value
