@@ -306,3 +306,16 @@ print(key_with_max_value({
 
 
 # 16: Remove Keys with a Given Value
+def remove_value(d, target):
+    result = {}
+
+    for key, values in d.items():
+        if values != target:
+            result[key] = values
+
+    return result
+
+print(remove_value(
+    {"a": 1, "b": 2, "c": 1, "d": 3},
+    1
+))
