@@ -362,3 +362,16 @@ print(invert_with_duplicates({
 
 
 # 19: Sum of All Dictionary Values
+def sum_values(d):
+    total = 0
+
+    for value in d.values():
+        total += value
+
+    return total
+
+print(sum_values({
+    "a": 10,
+    "b": 20,
+    "c": 30
+}))
