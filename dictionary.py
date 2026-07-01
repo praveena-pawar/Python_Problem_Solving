@@ -340,3 +340,21 @@ print(find_keys_by_value(
 
 
 # 18: Swap Keys and Values with Duplicate Values
+def invert_with_duplicates(d):
+    result = {}
+
+    for key, value in d.items():
+        if value not in result:
+            result[value] = [key]
+        else:  
+            result[value].append(key)
+
+    return result
+
+print(invert_with_duplicates({
+    "a": 1,
+    "b": 2,
+    "c": 1,
+    "d": 2,
+    "e": 3
+}))
