@@ -309,9 +309,9 @@ print(key_with_max_value({
 def remove_value(d, target):
     result = {}
 
-    for key, values in d.items():
-        if values != target:
-            result[key] = values
+    for key, value in d.items():
+        if value != target:
+            result[key] = value
 
     return result
 
@@ -319,3 +319,6 @@ print(remove_value(
     {"a": 1, "b": 2, "c": 1, "d": 3},
     1
 ))
+
+
+
