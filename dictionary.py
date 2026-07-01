@@ -378,4 +378,22 @@ print(sum_values({
 
 
 
-# 20 Count Keys That Start with a Given Letter
+# 20: Count Keys That Start with a Given Letter
+def count_keys_starting_with(d, letter):
+    count_string = 0
+
+    for key in d.keys():
+        if key[0] == letter:
+            count_string += 1
+
+    return count_string
+
+print(count_keys_starting_with(
+    {
+        "apple": 1,
+        "ant": 2,
+        "ball": 3,
+        "banana": 4
+    },
+    "a"
+))
