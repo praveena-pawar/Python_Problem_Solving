@@ -336,3 +336,7 @@ print(find_keys_by_value(
     {"a": 1, "b": 2, "c": 1, "d": 3},
     1
 ))
+
+
+
+# 18: Swap Keys and Values with Duplicate Values
