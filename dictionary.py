@@ -461,3 +461,7 @@ print(key_with_min_value({
     "c": 5,
     "d": 15
 }))
+
+
+
+# 24: Count Values That Occur Only Once
