@@ -494,3 +494,20 @@ print(unique_value_occurrences({
 
 
 # 25: Find the Key with the Longest Name
+def longest_key(d):
+    max_length = float("-inf")
+    longest_word = None
+
+    for key in d:
+        if len(key) > max_length:
+            max_length = len(key)
+            longest_word = key
+
+    return longest_word
+
+print(longest_key({
+    "cat": 1,
+    "elephant": 2,
+    "dog": 3,
+    "giraffe": 4
+}))
