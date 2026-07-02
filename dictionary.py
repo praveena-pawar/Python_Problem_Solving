@@ -401,3 +401,21 @@ print(count_keys_starting_with(
 
 
 # 21: Count Values Greater Than a Target
+def count_values_greater_than(d, target):
+    count_values = 0
+
+    for key, value in d.items():
+        if value > target:
+            count_values += 1
+
+    return count_values
+
+print(count_values_greater_than(
+    {
+        "a": 10,
+        "b": 25,
+        "c": 15,
+        "d": 30
+    },
+    20
+))
