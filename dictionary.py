@@ -404,7 +404,7 @@ print(count_keys_starting_with(
 def count_values_greater_than(d, target):
     count_values = 0
 
-    for key, value in d.items():
+    for value in d.values():
         if value > target:
             count_values += 1
 
@@ -419,3 +419,6 @@ print(count_values_greater_than(
     },
     20
 ))
+
+
+
