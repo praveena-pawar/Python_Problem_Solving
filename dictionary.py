@@ -397,3 +397,7 @@ print(count_keys_starting_with(
     },
     "a"
 ))
+
+
+
+# 21: Count Values Greater Than a Target
