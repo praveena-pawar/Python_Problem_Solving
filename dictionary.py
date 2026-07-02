@@ -423,5 +423,22 @@ print(count_values_greater_than(
 
 
 # 22: Dictionary Equality Without Using ==
+def dicts_equal(d1, d2):
+    if len(d1) != len(d2):
+        return False
+    
+    for key, value in d1.items():
+        if key not in d2:
+            return False
+        
+        if value != d2[key]:
+            return False
+        
+    return True
+
+print(dicts_equal(
+    {"a": 1, "b": 2},
+    {"b": 2, "a": 1}
+))
 
 
