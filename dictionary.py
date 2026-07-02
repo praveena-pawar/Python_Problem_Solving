@@ -444,3 +444,20 @@ print(dicts_equal(
 
 
 # 23: Find the Key with the Minimum Value
+def key_with_min_value(d):
+    min_value = float('inf')
+    min_key = None
+
+    for key, value in d.items():
+        if value < min_value:
+            min_value = value
+            min_key = key
+
+    return min_key
+
+print(key_with_min_value({
+    "a": 10,
+    "b": 25,
+    "c": 5,
+    "d": 15
+}))
