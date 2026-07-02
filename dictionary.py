@@ -465,3 +465,28 @@ print(key_with_min_value({
 
 
 # 24: Count Values That Occur Only Once
+def unique_value_occurrences(d):
+    freq = {}
+    count_occurrences = 0
+
+    for value in d.values():
+        if value in freq:
+            freq[value] += 1
+        else:
+            freq[value] = 1
+
+    for value in freq.values():
+        if value == 1:
+            count_occurrences +=1 
+
+    return count_occurrences
+
+
+print(unique_value_occurrences({
+    "a": 1,
+    "b": 2,
+    "c": 1,
+    "d": 3,
+    "e": 2,
+    "f": 4
+}))
