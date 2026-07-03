@@ -41,3 +41,6 @@ print(common_elements(
     [1, 2, 3, 4],
     [3, 4, 5, 6]
 ))
+
+
+# 4: Find Elements Only in the First List
