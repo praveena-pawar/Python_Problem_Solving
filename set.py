@@ -43,4 +43,18 @@ print(common_elements(
 ))
 
 
+
 # 4: Find Elements Only in the First List
+def only_in_first(a, b):
+    result = set()
+
+    for i in a:
+        if i not in b:
+            result.add(i)
+
+    return result
+
+print(only_in_first(
+    [1, 2, 3, 4],
+    [3, 4, 5, 6]
+))
