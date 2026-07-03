@@ -8,3 +8,7 @@ def remove_duplicates(nums):
     return unique_num
 
 print(remove_duplicates([1, 2, 2, 3, 1, 4, 3]))
+
+
+
+# 2: Check if a List Has Duplicates
