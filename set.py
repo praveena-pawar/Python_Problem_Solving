@@ -62,3 +62,20 @@ print(only_in_first(
 
 
 # 5: Elements in Either List, but Not Both
+def uncommon_elements(a, b):
+    result = set()
+
+    for i in a:
+        if i not in b:
+            result.add(i)
+
+    for i in b:
+        if i not in a:
+            result.add(i)
+
+    return result
+
+print(uncommon_elements(
+    [1, 2, 3, 4],
+    [3, 4, 5, 6]
+))
