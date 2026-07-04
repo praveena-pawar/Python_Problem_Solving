@@ -83,3 +83,16 @@ print(uncommon_elements(
 
 
 # 6: Check if One Collection Is a Subset
+def is_subset(a, b):
+    set_b = set(b)
+
+    for item in a:
+        if item not in set_b:
+            return False
+
+    return True
+
+print(is_subset(
+    [1, 2, 3],
+    [1, 2, 3, 4, 5]
+))
