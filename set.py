@@ -115,3 +115,14 @@ print(first_repeated([4, 2, 7, 2, 4, 8]))
 
 
 # 8: Find Missing Numbers in a Range
+def missing_numbers(nums, n):
+    result = set(nums)
+    missing_num = set()
+
+    for i in range(1, n+1):
+        if i not in result:
+            missing_num.add(i)
+
+    return missing_num
+
+print(missing_numbers([1, 2, 4, 6], 6))
