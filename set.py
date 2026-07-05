@@ -143,3 +143,7 @@ print(count_distinct(
     [1, 2, 2, 3],
     [3, 4, 5, 5]
 ))
+
+
+
+# 10: Check if Two Lists Are Disjoint
