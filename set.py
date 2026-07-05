@@ -168,3 +168,31 @@ print(are_disjoint(
 
 
 # 11: Find Elements Appearing in Exactly Two Lists
+def elements_in_exactly_two(a, b, c):
+    result = set()
+
+    set_a = set(a)
+    set_b = set(b)
+    set_c = set(c)
+
+    
+    for i in set_a:
+        if i in set_b and i not in set_c:
+            result.add(i)
+
+    for i in set_a:
+        if i in set_c and i not in set_b:
+            result.add(i)
+
+
+    for i in set_b:
+        if i in set_c and i not in set_a:
+            result.add(i)
+
+    return result
+
+print(elements_in_exactly_two(
+    [1, 2, 3],
+    [2, 3, 4],
+    [3, 4, 5]
+))
