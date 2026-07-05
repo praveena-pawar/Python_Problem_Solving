@@ -200,3 +200,22 @@ print(elements_in_exactly_two(
 
 
 # 12: First Unique Element 
+def first_unique(nums):
+    seen_once = set()
+    seen_multiple = set()
+
+    for i in nums:
+        if i not in seen_once and i not in seen_multiple:
+            seen_once.add(i)
+
+        elif i in seen_once:
+            seen_once.remove(i)
+            seen_multiple.add(i)
+
+    for i in nums:
+        if i in seen_once:
+            return i
+
+    return None
+
+print(first_unique([4, 2, 4, 3, 2, 5]))
