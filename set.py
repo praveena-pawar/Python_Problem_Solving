@@ -111,3 +111,7 @@ def first_repeated(nums):
     return None
 
 print(first_repeated([4, 2, 7, 2, 4, 8]))
+
+
+
+# 8: Find Missing Numbers in a Range
