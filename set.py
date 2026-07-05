@@ -130,3 +130,16 @@ print(missing_numbers([1, 2, 4, 6], 6))
 
 
 # 9: Count Distinct Elements Across Two Lists
+def count_distinct(a, b):
+    result = set(b)
+
+    for i in a:
+        result.add(i)
+
+    return len(result)
+
+
+print(count_distinct(
+    [1, 2, 2, 3],
+    [3, 4, 5, 5]
+))
