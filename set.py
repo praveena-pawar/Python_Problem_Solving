@@ -147,3 +147,20 @@ print(count_distinct(
 
 
 # 10: Check if Two Lists Are Disjoint
+def are_disjoint(a, b):
+    result = set(b)
+
+    for i in a:
+        if i in result:
+            return False
+    
+    return True
+
+print(are_disjoint(
+    [1, 2, 3],
+    [4, 5, 6]
+))
+print(are_disjoint(
+    [1, 2, 3],
+    [3, 4, 5]
+))
