@@ -126,3 +126,7 @@ def missing_numbers(nums, n):
     return missing_num
 
 print(missing_numbers([1, 2, 4, 6], 6))
+
+
+
+# 9: Count Distinct Elements Across Two Lists
