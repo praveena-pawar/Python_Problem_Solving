@@ -100,3 +100,14 @@ print(is_subset(
 
 
 # 7: First Repeated Element
+def first_repeated(nums):
+    seen = set()
+
+    for num in nums:
+        if num in seen:
+            return num
+        seen.add(num)
+        
+    return None
+
+print(first_repeated([4, 2, 7, 2, 4, 8]))
