@@ -175,7 +175,7 @@ def elements_in_exactly_two(a, b, c):
     set_b = set(b)
     set_c = set(c)
 
-    
+
     for i in set_a:
         if i in set_b and i not in set_c:
             result.add(i)
@@ -196,3 +196,7 @@ print(elements_in_exactly_two(
     [2, 3, 4],
     [3, 4, 5]
 ))
+
+
+
+# 12: First Unique Element 
