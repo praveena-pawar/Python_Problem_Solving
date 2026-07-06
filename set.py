@@ -223,3 +223,34 @@ print(first_unique([4, 2, 4, 3, 2, 5]))
 
 
 # 13: Common Duplicates
+def common_duplicates(a, b):
+    seen_a = set()
+    duplicates_a = set()
+
+    for i in a:
+        if i in seen_a:
+            duplicates_a.add(i)
+        else:
+            seen_a.add(i)
+
+    seen_b = set()
+    duplicates_b = set()
+
+    for i in b:
+        if i in seen_b:
+            duplicates_b.add(i)
+        else:
+            seen_b.add(i)
+
+    result = set()
+
+    for i in duplicates_a:
+        if i in duplicates_b:
+            result.add(i)
+
+    return result
+
+print(common_duplicates(
+    [1, 2, 2, 3, 3, 4],
+    [2, 2, 3, 4, 4, 5]
+))
