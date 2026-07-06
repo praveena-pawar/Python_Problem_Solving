@@ -28,3 +28,7 @@ def swap_adjacent(t):
     return tuple(result)
 
 print(swap_adjacent((1, 2, 3, 4, 5, 6)))
+
+
+
+# 3: Most Frequent Element
