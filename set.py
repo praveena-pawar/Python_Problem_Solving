@@ -257,4 +257,26 @@ print(common_duplicates(
 
 
 
-# 14:  Unique Elements from Each List
+# 14: Unique Elements from Each List
+def unique_to_each_list(a, b):
+    unique_a = set(a)
+    unique_b = set(b)
+
+    result_a = set()
+    result_b = set()
+ 
+
+    for i in unique_a:
+        if i not in unique_b:
+            result_a.add(i)
+
+    for i in unique_b:
+        if i not in unique_a:
+            result_b.add(i)
+
+    return result_a, result_b
+
+print(unique_to_each_list(
+    [1, 2, 3, 4],
+    [3, 4, 5, 6]
+))
