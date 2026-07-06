@@ -280,3 +280,7 @@ print(unique_to_each_list(
     [1, 2, 3, 4],
     [3, 4, 5, 6]
 ))
+
+
+
+# 15: Longest Consecutive Sequence
