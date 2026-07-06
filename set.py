@@ -254,3 +254,7 @@ print(common_duplicates(
     [1, 2, 2, 3, 3, 4],
     [2, 2, 3, 4, 4, 5]
 ))
+
+
+
+# 14:  Unique Elements from Each List
