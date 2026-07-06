@@ -219,3 +219,7 @@ def first_unique(nums):
     return None
 
 print(first_unique([4, 2, 4, 3, 2, 5]))
+
+
+
+# 13: Common Duplicates
