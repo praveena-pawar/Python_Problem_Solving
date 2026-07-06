@@ -14,3 +14,17 @@ def second_largest(t):
     return second
 
 print(second_largest((10, 5, 20, 20, 8, 15)))
+
+
+
+# 2: Swap Adjacent Elements
+def swap_adjacent(t):
+    result = []
+
+    for i in range(0, len(t) -1, 2):
+        result.append(t[i+1])
+        result.append(t[i])
+
+    return tuple(result)
+
+print(swap_adjacent((1, 2, 3, 4, 5, 6)))
