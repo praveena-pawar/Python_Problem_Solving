@@ -32,3 +32,22 @@ print(swap_adjacent((1, 2, 3, 4, 5, 6)))
 
 
 # 3: Most Frequent Element
+def most_frequent_tuple(t):
+    freq = {}
+
+    for i in t:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+
+    max_count = 0
+    most_frequent = None
+    for key in freq:
+        if freq[key] > max_count:
+            max_count = freq[key]
+            most_frequent = key
+
+    return most_frequent
+
+print(most_frequent_tuple((1, 2, 2, 3, 1, 2, 4)))
