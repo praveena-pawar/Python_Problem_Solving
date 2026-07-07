@@ -102,3 +102,7 @@ def longest_repetition(t):
     return longest_count
 
 print(longest_repetition((1, 1, 2, 2, 2, 3, 3, 1)))
+
+
+
+# 6: Group Consecutive Equal Elements
