@@ -80,3 +80,25 @@ print(find_pairs((1, 2, 3, 4, 5), 6))
 
 
 # 5: Longest Consecutive Repetition
+def longest_repetition(t):
+    if len(t) == 0:
+        return 0
+    
+    current_count = 1
+    longest_count = 1
+
+    for i in range(1, len(t)):
+        if t[i] == t[i - 1]:
+            current_count += 1
+        else:
+            if current_count > longest_count:
+                longest_count = current_count
+
+            current_count = 1
+
+    if current_count > longest_count:
+        longest_count = current_count
+
+    return longest_count
+
+print(longest_repetition((1, 1, 2, 2, 2, 3, 3, 1)))
