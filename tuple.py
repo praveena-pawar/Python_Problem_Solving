@@ -76,3 +76,7 @@ def find_pairs(t, target):
     return result
 
 print(find_pairs((1, 2, 3, 4, 5), 6))
+
+
+
+# 5: Longest Consecutive Repetition
