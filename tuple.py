@@ -55,3 +55,24 @@ print(most_frequent_tuple((1, 2, 2, 3, 1, 2, 4)))
 
 
 # 4: Find All Pairs with Target Sum
+def find_pairs(t, target):
+    seen = set()
+    result = set()
+
+    for num in t:
+        needed = target - num
+
+        if needed in seen:
+
+            if needed < num:
+                pair = (needed, num)
+            else:
+                pair = (num, needed)
+
+            result.add(pair)
+
+        seen.add(num)
+
+    return result
+
+print(find_pairs((1, 2, 3, 4, 5), 6))
