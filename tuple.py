@@ -106,3 +106,22 @@ print(longest_repetition((1, 1, 2, 2, 2, 3, 3, 1)))
 
 
 # 6: Group Consecutive Equal Elements
+def group_consecutive(t):
+    if not t:
+        return ()
+
+    result = []
+    group = [t[0]]
+
+    for i in range(1, len(t)):
+        if t[i] == t[i - 1]:
+            group.append(t[i])
+        else:
+            result.append(tuple(group))
+            group = [t[i]]
+
+    result.append(tuple(group))
+
+    return tuple(result)
+
+print(group_consecutive((1, 1, 2, 2, 2, 3, 1, 1)))
