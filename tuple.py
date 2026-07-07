@@ -51,3 +51,7 @@ def most_frequent_tuple(t):
     return most_frequent
 
 print(most_frequent_tuple((1, 2, 2, 3, 1, 2, 4)))
+
+
+
+# 4: Find All Pairs with Target Sum
