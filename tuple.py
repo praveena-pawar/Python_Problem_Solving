@@ -180,3 +180,29 @@ print(most_frequent_consecutive_pair((1, 2, 1, 2, 3, 1, 2)))
 
 
 # 9: Longest Alternating Parity Streak
+def longest_alternating_parity(t):
+    if len(t) == 0:
+        return 0
+
+    longest = 1
+    current = 1
+
+    for i in range(1, len(t)):
+        if (t[i] % 2) != (t[i - 1] % 2):
+            current += 1
+        else:
+            current = 1
+
+        if current > longest:
+            longest = current
+
+    return longest
+
+
+print(longest_alternating_parity(
+    (1, 2, 3, 4, 6, 7, 8)
+))
+
+
+
+# 10: Longest Increasing Consecutive Run
