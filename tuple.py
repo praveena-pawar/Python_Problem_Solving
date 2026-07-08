@@ -153,3 +153,30 @@ print(largest_gap_element((1, 2, 3, 1, 4, 2, 5, 1)))
 
 
 # 8: Most Frequent Consecutive Pair
+def most_frequent_consecutive_pair(t):
+    freq = {}
+
+    for i in range(len(t) - 1):
+        pair = (t[i], t[i + 1])
+
+        if pair in freq:
+            freq[pair] += 1
+        else:
+            freq[pair] = 1
+
+    max_count = 0
+    result = None
+
+    for pair in freq:
+        if freq[pair] > max_count:
+            max_count = freq[pair]
+            result = pair
+
+    return result
+
+
+print(most_frequent_consecutive_pair((1, 2, 1, 2, 3, 1, 2)))
+
+
+
+# 9: Longest Alternating Parity Streak
