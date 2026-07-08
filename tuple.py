@@ -149,3 +149,7 @@ def largest_gap_element(t):
 
 
 print(largest_gap_element((1, 2, 3, 1, 4, 2, 5, 1)))
+
+
+
+# 8: Most Frequent Consecutive Pair
