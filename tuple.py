@@ -130,3 +130,22 @@ print(group_consecutive((1, 1, 2, 2, 2, 3, 1, 1)))
 
 
 # 7: Element with the Largest Gap Between Occurrences
+def largest_gap_element(t):
+    first_index = {}
+    max_gap = -1
+    result = None
+
+    for index, value in enumerate(t):
+        if value not in first_index:
+            first_index[value] = index
+        else:
+            gap = index - first_index[value]
+
+            if gap > max_gap:
+                max_gap = gap
+                result = value
+
+    return result
+
+
+print(largest_gap_element((1, 2, 3, 1, 4, 2, 5, 1)))
