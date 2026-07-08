@@ -125,3 +125,8 @@ def group_consecutive(t):
     return tuple(result)
 
 print(group_consecutive((1, 1, 2, 2, 2, 3, 1, 1)))
+
+
+
+
+# 7: Element with the Largest Gap Between Occurrences
