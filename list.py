@@ -484,4 +484,3 @@ def longest_increasing_streak(nums):
     return max_streak
 
 print(longest_increasing_streak([1, 2, 3, 1, 2, 3, 4, 1]))
-
